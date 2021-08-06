@@ -4,6 +4,10 @@
 I am Vanaj Kamboj and this is my final project for CS50x 2021
 I have build a web application using Flask framework which is called BeFit.
 
+
+<img width="1440" alt="Screenshot 2021-08-06 at 8 39 58 PM" src="https://user-images.githubusercontent.com/62696144/128532068-f501a3d1-bbf4-4904-9a6f-385df6ea0ee5.png">
+
+
 The purpose of this website is to let users easily calculate their:
 > Basal Metabolic Rate(BMR)
 
