@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Ideal Weight
+{% endblock %}
+
+{% block main %}
+    <h1 class= "left" ><strong><span class = "blue">Ideal</span><span class = "yellow"> Weight</span></strong></h1>
+    <p class = "left">The two primary parameters that impact your health – your height and weight are co-related using height and weight charts.
+    It sets the standards for you to determine if your height and weight are in harmony, mirroring the state of your health.</p>
+
+    <p><br></p>
+    <h1><strong>Ideal Weight</strong> <span class = "red">Calculator</span></h1>
+    <p><br></p>
+
+    <form action="/weight" method="post">
+
+        <div class="form-group">
+            <input autocomplete = "off" class="form-control" name="gender" placeholder="Gender" type="text" autofocus>
+            <input autocomplete = "off" class="form-control" name="height" placeholder="Height in centi-meters" type="number">
+            <input autocomplete = "off" class="form-control" name="age" placeholder="Enter your age" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+
+{% endblock %}

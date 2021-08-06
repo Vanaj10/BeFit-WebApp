@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    BMR
+{% endblock %}
+
+{% block main %}
+    <h1 class= "left" ><strong><span class = "blue">B</span><span class = "green">M</span><span class = "red">R</span></strong></h1>
+    <p class = "left">
+        Even when resting, your body burns calories by performing basic functions to sustain life, such as:
+        <ul class ="left">
+            <li>Breathing</li>
+            <li>Blood Circulation</li>
+            <li>Digestion</li>
+            <li>Cell production</li>
+        </ul>
+    </p>
+    <p class = "left">Basal metabolic rate is the number of calories your body needs to accomplish its most basic (basal) life-sustaining functions.
+    So with the help of BMR you can plan your nutrition according to your goal. If your goal is to lose weight then your calorie intake must be less than your BMR
+    and if your goal is to gain weight then you calorie intake has to be more than your BMR.</p>
+    <p><br></p>
+    <h1><strong>BMR</strong> <span class = "red">Calculator</span></h1>
+    <p><br></p>
+
+    <form action="/bmr" method="post">
+
+        <div class="form-group">
+            <input autocomplete = "off" class="form-control" name="gender" placeholder="Gender" type="text" autofocus>
+            <input autocomplete = "off" class="form-control" name="weight" placeholder="Your weight in Kilograms" type="number">
+            <input autocomplete = "off" class="form-control" name="height" placeholder="Height in centi-meters" type="number">
+            <input autocomplete = "off" class="form-control" name="age" placeholder="Enter your age" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+
+{% endblock %}
