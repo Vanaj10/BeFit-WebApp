@@ -60,5 +60,3 @@ by rendering template weighttable.html
 
 Lastly there is the python application file which contains all of the calculations and data that is
 dynamically processed to give the final result
-
-Thank You
